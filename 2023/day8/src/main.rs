@@ -1,6 +1,6 @@
 use std::collections::{HashMap, HashSet};
 fn main() {
-    let input = String::from_utf8(include_bytes!("../input.txt").to_vec()).unwrap();
+    let input = String::from_utf8(include_bytes!("../test.txt").to_vec()).unwrap();
     let mut lines = input.split('\n');
 
     let mut part1 = 0;

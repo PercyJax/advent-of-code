@@ -1,7 +1,7 @@
 use std::usize;
 
 fn main() {
-    let input = std::str::from_utf8(include_bytes!("../input.txt")).unwrap();
+    let input = std::str::from_utf8(include_bytes!("../test.txt")).unwrap();
     let mut lines = input.split('\n');
 
     let mut part_1 = Vec::new();

@@ -1,7 +1,7 @@
-use std::{usize};
+use std::usize;
 
 fn main() {
-    let input = std::str::from_utf8(include_bytes!("../input.txt")).unwrap();
+    let input = std::str::from_utf8(include_bytes!("../test.txt")).unwrap();
     let lines = input.split('\n');
 
     let mut part_1: usize = 0;
@@ -25,8 +25,7 @@ fn main() {
             part_1 += 1;
         }
 
-        if !(first_end < second_start || second_end < first_start)
-        {
+        if !(first_end < second_start || second_end < first_start) {
             part_2 += 1;
         }
     }
